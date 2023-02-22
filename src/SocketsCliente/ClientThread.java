@@ -38,7 +38,7 @@ public class ClientThread extends Thread{
                  * recibe el mensaje y lo muestra en consola
                  */
                 
-                FileOutputStream f=new FileOutputStream("C:\\Users\\rjsaa\\OneDrive\\Documentos\\NetBeansProjects\\ServidorDeArchivos\\src\\SocketsCliente\\respuestas.txt");
+                FileOutputStream f=new FileOutputStream("respuestas.txt");
                         while(true){
                             DatagramPacket dp=new DatagramPacket(buffer,buffer.length);
                             ds.receive(dp);

@@ -42,7 +42,7 @@ public class HiloServ implements Runnable {
             FileInputStream f = null;
             
             if(mensaje.contains("1")){
-                 f=new FileInputStream("C:\\Users\\rjsaa\\OneDrive\\Documentos\\NetBeansProjects\\ServidorDeArchivos\\src\\Sockets\\1. nombres.txt");
+                 f=new FileInputStream("1. nombres.txt");
                         
                  int i=0;
                  while(f.available()!=0){
@@ -50,7 +50,7 @@ public class HiloServ implements Runnable {
                         i++;
                  }                    
             }else if (mensaje.contains("2")){
-                 f=new FileInputStream("C:\\Users\\rjsaa\\OneDrive\\Documentos\\NetBeansProjects\\ServidorDeArchivos\\src\\Sockets\\2. platillos.txt");
+                 f=new FileInputStream("2. platillos.txt");
                         
                  int i=0;
                  while(f.available()!=0){
@@ -58,7 +58,7 @@ public class HiloServ implements Runnable {
                         i++;
                  } 
             }else if(mensaje.contains("3")){
-                 f=new FileInputStream("C:\\Users\\rjsaa\\OneDrive\\Documentos\\NetBeansProjects\\ServidorDeArchivos\\src\\Sockets\\3. pagos.txt");
+                 f=new FileInputStream("3. pagos.txt");
                         
                  int i=0;
                  while(f.available()!=0){
